@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Placeholder: glossy detailed car exterior">
+  <defs>
+    <linearGradient id="e" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d0d0b"/><stop offset="1" stop-color="#26221b"/>
+    </linearGradient>
+    <linearGradient id="paint" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a352c"/><stop offset="0.5" stop-color="#0a0a08"/><stop offset="1" stop-color="#000"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#e)"/>
+  <!-- close-up fender/panel -->
+  <path d="M-20 300 C140 180 460 170 640 280 L640 420 L-20 420 Z" fill="url(#paint)"/>
+  <!-- bright reflection streaks (wax gloss) -->
+  <path d="M40 270 C220 200 420 198 580 262" stroke="#ffffff" stroke-width="6" fill="none" opacity="0.35"/>
+  <path d="M60 300 C240 236 440 234 590 296" stroke="#ec6a1a" stroke-width="4" fill="none" opacity="0.85"/>
+  <!-- door handle -->
+  <rect x="300" y="246" width="70" height="14" rx="7" fill="#2b2722"/>
+  <!-- water-bead sparkle -->
+  <circle cx="180" cy="250" r="5" fill="#ffffff" opacity="0.7"/>
+  <circle cx="430" cy="244" r="4" fill="#ffffff" opacity="0.6"/>
+  <path d="M470 90 l7 19 19 7 -19 7 -7 19 -7 -19 -19 -7 19 -7 z" fill="#ec6a1a"/>
+</svg>

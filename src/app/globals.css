@@ -1,0 +1,179 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------ *
+ * Mr. Details — brand design system
+ * Tailwind v4 CSS-first config. Tokens mirror the spec's
+ * tailwind.config.ts (§2/§3) but live here because v4 is config-less.
+ * ------------------------------------------------------------------ */
+
+@theme {
+  /* --- Colour ----------------------------------------------------- */
+  --color-ink-900: #1a1916; /* PRIMARY dark — dark sections, headlines */
+  --color-ink-850: #0d0d0b; /* near-black — deepest fields / footer    */
+  --color-ink-700: #37352f; /* charcoal — their actual body-text colour */
+
+  --color-brand-gold: #ec6a1a;  /* PRIMARY accent — eyebrows, CTAs, handle */
+  --color-brand-gold2: #c9560f; /* darker amber — hover / pressed          */
+
+  --color-peach: #fce6cf; /* soft warm tint — alternating sections */
+  --color-muted: #6b675f; /* muted copy / borders                  */
+
+  /* --- Type ------------------------------------------------------- */
+  --font-display: var(--font-bebas), "Bebas Neue", sans-serif;
+  --font-body: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+
+  /* --- Radius ----------------------------------------------------- */
+  --radius-pill: 100px;
+  --radius-card: 16px;
+
+  /* --- Motion ----------------------------------------------------- */
+  --animate-marquee: marquee 32s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ------------------------------------------------------------------ *
+ * Base
+ * ------------------------------------------------------------------ */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* sticky header offset for in-page anchors */
+    scroll-padding-top: 88px;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background: #ffffff;
+    color: var(--color-ink-700);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Display type is condensed & all-caps friendly */
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    line-height: 1;
+    letter-spacing: 0.01em;
+    text-wrap: balance;
+  }
+
+  /* Visible keyboard focus everywhere */
+  :focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(236, 106, 26, 0.65);
+    border-radius: 4px;
+  }
+
+  ::selection {
+    background: var(--color-brand-gold);
+    color: var(--color-ink-900);
+  }
+}
+
+/* ------------------------------------------------------------------ *
+ * Reusable utilities / component patterns
+ * ------------------------------------------------------------------ */
+@layer components {
+  /* Centered page container — replaces spec's max-w-site */
+  .container-site {
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+  }
+
+  /* Section vertical rhythm */
+  .section-y {
+    padding-block: clamp(64px, 10vw, 120px);
+  }
+
+  /* Eyebrow / kicker — Poppins, uppercase, gold (§3) */
+  .eyebrow {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--color-brand-gold);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  /* Animated gold underline-wipe for nav links */
+  .link-wipe {
+    position: relative;
+  }
+  .link-wipe::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 2px;
+    width: 100%;
+    background: var(--color-brand-gold);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.28s ease;
+  }
+  .link-wipe:hover::after,
+  .link-wipe:focus-visible::after {
+    transform: scaleX(1);
+  }
+}
+
+/* ------------------------------------------------------------------ *
+ * Atmosphere — subtle film grain over dark bands (skill §Visual FX)
+ * Applied via the .grain helper; pointer-events disabled.
+ * ------------------------------------------------------------------ */
+.grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.05;
+  z-index: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* ------------------------------------------------------------------ *
+ * Scroll-reveal base state (toggled by components/Reveal.tsx)
+ * ------------------------------------------------------------------ */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .animate-marquee {
+    animation: none !important;
+  }
+}

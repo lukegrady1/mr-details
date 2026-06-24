@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Placeholder: glossy detailed car at dusk">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d0d0b"/>
+      <stop offset="0.55" stop-color="#1a1916"/>
+      <stop offset="1" stop-color="#26221b"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.72" cy="0.35" r="0.6">
+      <stop offset="0" stop-color="#ec6a1a" stop-opacity="0.55"/>
+      <stop offset="0.4" stop-color="#c9560f" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#1a1916" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2b2722"/>
+      <stop offset="0.5" stop-color="#14130f"/>
+      <stop offset="1" stop-color="#000000"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+  <rect width="1600" height="1000" fill="url(#glow)"/>
+  <!-- ground reflection -->
+  <rect y="720" width="1600" height="280" fill="#000000" opacity="0.45"/>
+  <!-- abstract car body -->
+  <path d="M180 700 C320 560 520 520 760 520 C980 520 1180 540 1360 620 C1430 650 1470 690 1470 720 L1470 760 L180 760 Z" fill="url(#body)"/>
+  <path d="M520 540 C640 470 900 470 1040 540 L1180 600 L460 600 Z" fill="#1f1c17"/>
+  <!-- windows -->
+  <path d="M560 545 C660 495 860 495 980 545 L1080 595 L520 595 Z" fill="#0a0a08" opacity="0.85"/>
+  <!-- gloss streak -->
+  <path d="M300 660 C600 600 1000 590 1380 650" stroke="#ec6a1a" stroke-width="3" fill="none" opacity="0.7"/>
+  <path d="M260 690 C620 640 1040 632 1420 692" stroke="#ffffff" stroke-width="1.5" fill="none" opacity="0.25"/>
+  <!-- wheels -->
+  <circle cx="540" cy="760" r="78" fill="#0a0a08"/>
+  <circle cx="540" cy="760" r="40" fill="#2b2722"/>
+  <circle cx="1120" cy="760" r="78" fill="#0a0a08"/>
+  <circle cx="1120" cy="760" r="40" fill="#2b2722"/>
+  <!-- sparkles -->
+  <g fill="#ffffff">
+    <path d="M1080 300 l8 22 22 8 -22 8 -8 22 -8 -22 -22 -8 22 -8 z" opacity="0.9"/>
+    <path d="M860 360 l5 14 14 5 -14 5 -5 14 -5 -14 -14 -5 14 -5 z" opacity="0.6"/>
+  </g>
+</svg>

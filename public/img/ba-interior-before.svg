@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Placeholder: dirty car interior before detailing">
+  <rect width="800" height="600" fill="#3b362d"/>
+  <rect width="800" height="600" fill="#5a5346" opacity="0.5"/>
+  <!-- dashboard -->
+  <path d="M0 230 C220 180 580 180 800 230 L800 300 L0 300 Z" fill="#2c281f"/>
+  <!-- steering wheel -->
+  <circle cx="250" cy="320" r="78" fill="none" stroke="#46402f" stroke-width="18"/>
+  <circle cx="250" cy="320" r="18" fill="#46402f"/>
+  <!-- grimy seat -->
+  <path d="M480 540 L480 360 a54 54 0 0 1 54 -54 l52 0 a54 54 0 0 1 54 54 L640 540 Z" fill="#4b463a"/>
+  <path d="M498 360 a36 36 0 0 1 36 -36 l34 0 a36 36 0 0 1 36 36 L604 470 L498 470 Z" fill="#5c5443"/>
+  <!-- dust / stains -->
+  <g fill="#6f6650" opacity="0.7">
+    <circle cx="360" cy="430" r="10"/><circle cx="400" cy="470" r="7"/>
+    <circle cx="540" cy="400" r="9"/><circle cx="300" cy="500" r="12"/>
+    <circle cx="600" cy="500" r="8"/><circle cx="180" cy="430" r="9"/>
+  </g>
+  <g fill="#8a7f63" opacity="0.5">
+    <circle cx="450" cy="350" r="4"/><circle cx="520" cy="520" r="5"/>
+    <circle cx="250" cy="470" r="4"/><circle cx="650" cy="440" r="5"/>
+  </g>
+</svg>

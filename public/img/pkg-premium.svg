@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Placeholder: premium full detail with ceramic-wax shine">
+  <defs>
+    <linearGradient id="pm" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d0d0b"/><stop offset="1" stop-color="#2b2722"/>
+    </linearGradient>
+    <linearGradient id="pmpaint" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a443a"/><stop offset="0.5" stop-color="#0a0a08"/><stop offset="1" stop-color="#000"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#pm)"/>
+  <ellipse cx="300" cy="120" rx="320" ry="150" fill="#ec6a1a" opacity="0.22"/>
+  <!-- premium badge ring -->
+  <circle cx="300" cy="150" r="120" fill="none" stroke="#ec6a1a" stroke-width="1.5" opacity="0.4"/>
+  <!-- glossy car body -->
+  <path d="M70 270 C150 200 230 185 300 185 C400 185 480 205 540 250 L540 285 L70 285 Z" fill="url(#pmpaint)"/>
+  <path d="M180 200 C240 165 360 165 420 200 L470 240 L150 240 Z" fill="#26221b"/>
+  <path d="M200 205 C250 178 350 178 405 205 L440 235 L175 235 Z" fill="#0a0a08"/>
+  <!-- bright ceramic reflection streaks -->
+  <path d="M110 248 C260 214 420 211 525 250" stroke="#ffffff" stroke-width="5" fill="none" opacity="0.4"/>
+  <path d="M120 262 C260 230 420 227 520 264" stroke="#ec6a1a" stroke-width="3" fill="none" opacity="0.9"/>
+  <circle cx="190" cy="285" r="34" fill="#0a0a08"/><circle cx="190" cy="285" r="16" fill="#3a352c"/>
+  <circle cx="430" cy="285" r="34" fill="#0a0a08"/><circle cx="430" cy="285" r="16" fill="#3a352c"/>
+  <!-- premium sparkles -->
+  <path d="M300 60 l9 24 24 9 -24 9 -9 24 -9 -24 -24 -9 24 -9 z" fill="#ffffff" opacity="0.9"/>
+  <path d="M150 110 l5 14 14 5 -14 5 -5 14 -5 -14 -14 -5 14 -5 z" fill="#ec6a1a"/>
+  <path d="M455 105 l5 14 14 5 -14 5 -5 14 -5 -14 -14 -5 14 -5 z" fill="#ec6a1a"/>
+</svg>

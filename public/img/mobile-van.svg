@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Placeholder: mobile detailing setup in a driveway">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fce6cf"/>
+      <stop offset="1" stop-color="#f3d3b2"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <!-- driveway -->
+  <rect y="430" width="800" height="170" fill="#e3c6a4"/>
+  <line x1="0" y1="500" x2="800" y2="470" stroke="#cda878" stroke-width="3"/>
+  <!-- van body -->
+  <rect x="120" y="210" width="430" height="220" rx="22" fill="#1a1916"/>
+  <rect x="430" y="250" width="160" height="180" rx="18" fill="#26221b"/>
+  <rect x="150" y="240" width="250" height="90" rx="10" fill="#0d0d0b"/>
+  <!-- gold accent stripe + wordmark bar -->
+  <rect x="120" y="350" width="470" height="14" fill="#ec6a1a"/>
+  <rect x="170" y="378" width="180" height="14" rx="7" fill="#ec6a1a" opacity="0.6"/>
+  <!-- windshield -->
+  <path d="M550 250 h30 a14 14 0 0 1 14 14 v40 h-44 z" fill="#0d0d0b"/>
+  <!-- wheels -->
+  <circle cx="220" cy="440" r="44" fill="#0d0d0b"/><circle cx="220" cy="440" r="20" fill="#3a352c"/>
+  <circle cx="470" cy="440" r="44" fill="#0d0d0b"/><circle cx="470" cy="440" r="20" fill="#3a352c"/>
+  <!-- bucket + hose (detailing gear) -->
+  <path d="M620 380 l60 0 -8 50 -44 0 z" fill="#37352f"/>
+  <path d="M650 380 q40 -60 -10 -90" stroke="#6b675f" stroke-width="6" fill="none"/>
+  <!-- sparkle -->
+  <path d="M300 150 l7 20 20 7 -20 7 -7 20 -7 -20 -20 -7 20 -7 z" fill="#ec6a1a"/>
+</svg>

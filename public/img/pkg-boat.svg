@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Placeholder: clean, detailed boat on the water">
+  <defs>
+    <linearGradient id="bsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b2722"/><stop offset="1" stop-color="#14130f"/>
+    </linearGradient>
+    <linearGradient id="hull" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#cfcabf"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bsky)"/>
+  <ellipse cx="320" cy="120" rx="300" ry="140" fill="#ec6a1a" opacity="0.16"/>
+  <!-- water -->
+  <rect y="270" width="600" height="130" fill="#0a0a08"/>
+  <path d="M0 280 C150 268 450 268 600 280" stroke="#ec6a1a" stroke-width="3" fill="none" opacity="0.7"/>
+  <path d="M0 300 C150 290 450 290 600 300" stroke="#ffffff" stroke-width="1.5" fill="none" opacity="0.2"/>
+  <!-- boat hull -->
+  <path d="M120 250 L470 250 L420 300 L175 300 Z" fill="url(#hull)"/>
+  <path d="M120 250 L470 250 L460 264 L130 264 Z" fill="#ec6a1a"/>
+  <!-- cabin / windshield -->
+  <path d="M210 250 L210 210 L320 210 L350 250 Z" fill="#37352f"/>
+  <path d="M225 245 L225 220 L312 220 L332 245 Z" fill="#0d0d0b"/>
+  <!-- console -->
+  <rect x="360" y="226" width="40" height="24" rx="4" fill="#26221b"/>
+  <!-- gloss highlight on hull -->
+  <path d="M150 270 C260 262 380 262 440 270" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.6"/>
+  <!-- sparkle -->
+  <path d="M300 80 l7 19 19 7 -19 7 -7 19 -7 -19 -19 -7 19 -7 z" fill="#ffffff" opacity="0.85"/>
+</svg>

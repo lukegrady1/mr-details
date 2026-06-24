@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Placeholder: deep glossy car paint after detailing">
+  <defs>
+    <linearGradient id="xaf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a1916"/><stop offset="1" stop-color="#0d0d0b"/>
+    </linearGradient>
+    <linearGradient id="xpaint" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a352c"/><stop offset="0.5" stop-color="#0a0a08"/><stop offset="1" stop-color="#000"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#xaf)"/>
+  <!-- glossy panel -->
+  <path d="M-20 430 C200 300 600 290 820 410 L820 620 L-20 620 Z" fill="url(#xpaint)"/>
+  <!-- crisp reflection streaks (wax gloss) -->
+  <path d="M40 400 C260 318 560 312 760 388" stroke="#ffffff" stroke-width="8" fill="none" opacity="0.4"/>
+  <path d="M60 430 C280 354 560 348 750 420" stroke="#ec6a1a" stroke-width="5" fill="none" opacity="0.9"/>
+  <path d="M80 470 C300 404 540 400 720 458" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.25"/>
+  <!-- water beads -->
+  <circle cx="220" cy="380" r="5" fill="#ffffff" opacity="0.7"/>
+  <circle cx="520" cy="372" r="4" fill="#ffffff" opacity="0.6"/>
+  <!-- door handle -->
+  <rect x="380" y="368" width="92" height="18" rx="9" fill="#2b2722"/>
+</svg>

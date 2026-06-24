@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Placeholder: Mr. Details detailer at work on the South Shore">
+  <defs>
+    <linearGradient id="a" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a1916"/><stop offset="1" stop-color="#0d0d0b"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="700" fill="url(#a)"/>
+  <radialGradient id="ag" cx="0.5" cy="0.32" r="0.6">
+    <stop offset="0" stop-color="#ec6a1a" stop-opacity="0.32"/>
+    <stop offset="1" stop-color="#0d0d0b" stop-opacity="0"/>
+  </radialGradient>
+  <rect width="600" height="700" fill="url(#ag)"/>
+  <!-- figure detailing a panel -->
+  <circle cx="300" cy="250" r="60" fill="#37352f"/>
+  <path d="M210 470 C210 370 250 330 300 330 C350 330 390 370 390 470 L390 540 L210 540 Z" fill="#26221b"/>
+  <!-- arm + microfibre cloth -->
+  <path d="M360 380 C420 400 460 430 470 470" stroke="#37352f" stroke-width="34" fill="none" stroke-linecap="round"/>
+  <rect x="440" y="450" width="80" height="60" rx="10" fill="#ec6a1a" transform="rotate(18 480 480)"/>
+  <!-- panel being buffed -->
+  <path d="M120 560 C260 520 420 520 540 562 L540 700 L120 700 Z" fill="#0a0a08"/>
+  <path d="M150 580 C300 548 420 548 520 582" stroke="#ec6a1a" stroke-width="3" fill="none" opacity="0.8"/>
+  <path d="M120 130 l8 22 22 8 -22 8 -8 22 -8 -22 -22 -8 22 -8 z" fill="#ffffff" opacity="0.8"/>
+</svg>

@@ -26,18 +26,17 @@ export default function Hero() {
       id="top"
       className="relative isolate flex min-h-[88vh] items-center overflow-hidden bg-ink-850 text-white grain"
     >
-      {/* Background photo + dark overlay so white text always pops.
-          Swap public/img/hero-car.svg for a real photo to change this. */}
+      {/* Background photo + dark overlay so white text always pops. */}
       <Image
-        src="/img/hero-car.svg"
-        alt="A freshly detailed car gleaming at dusk"
+        src="/hero.png"
+        alt="A car covered in foam being washed during a Mr. Details mobile detail"
         fill
         priority
         sizes="100vw"
-        className="-z-10 object-cover opacity-70"
+        className="-z-10 object-cover"
       />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-ink-850/85 via-ink-850/65 to-ink-850/90" />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-ink-850 via-ink-850/80 to-transparent" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-ink-850/80 via-ink-850/55 to-ink-850/90" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-ink-850 via-ink-850/75 to-ink-850/20" />
 
       <div className="container-site relative z-10 py-32 md:py-40">
         <div className="max-w-2xl">

@@ -33,7 +33,7 @@ export const BUSINESS: Business = {
   subhead: "Book a mobile detail for your car with Mr. Details today.",
   phoneDisplay: "(617) 827-2268",
   phoneHref: "tel:+16178272268",
-  calendly: "https://calendly.com/mrdetails617",
+  calendly: "https://calendly.com/mr-details",
   instagram: "https://instagram.com/mrdetailsmobiledetailing",
   instagramHandle: "@mrdetailsmobiledetailing",
   region: "South Shore of Massachusetts",

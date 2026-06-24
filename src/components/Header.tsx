@@ -40,14 +40,19 @@ export default function Header() {
   const isActive = (href: string): boolean =>
     href === "/" ? pathname === "/" : pathname.startsWith(href);
 
-  // Mobile nav tap: always close the overlay. If we're already on the target
-  // route (e.g. tapping "Home" from the homepage, where the Link won't
-  // navigate), scroll to the top so it still "goes" somewhere.
-  const handleMobileNav = (href: string): void => {
-    setOpen(false);
+  // If we're already on the target route (e.g. clicking "Home" from the
+  // homepage, where the Link won't navigate), scroll back to the top so the
+  // click still "goes" somewhere.
+  const scrollTopIfActive = (href: string): void => {
     if (isActive(href)) {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
+  };
+
+  // Mobile nav tap: always close the overlay, then the same scroll-to-top.
+  const handleMobileNav = (href: string): void => {
+    setOpen(false);
+    scrollTopIfActive(href);
   };
 
   return (
@@ -60,7 +65,12 @@ export default function Header() {
       }`}
     >
       <div className="container-site flex h-20 items-center justify-between gap-4">
-        <Link href="/" aria-label={`${BUSINESS.name} — home`} className="shrink-0">
+        <Link
+          href="/"
+          aria-label={`${BUSINESS.name} — home`}
+          className="shrink-0"
+          onClick={() => scrollTopIfActive("/")}
+        >
           <Logo className="h-12 sm:h-14" priority />
         </Link>
 
@@ -75,6 +85,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
+                onClick={() => scrollTopIfActive(link.href)}
                 aria-current={active ? "page" : undefined}
                 className={`link-wipe font-body text-[15px] font-medium transition-colors ${
                   active ? "text-brand-gold" : "text-white/90 hover:text-white"

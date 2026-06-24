@@ -144,7 +144,7 @@ export default function Header() {
           child) so the header's backdrop-blur can't become the containing block
           for this fixed element and clip it to the 72px bar. */}
       <div
-        className={`fixed inset-0 z-[45] flex flex-col bg-ink-850 px-6 pb-10 pt-28 transition-opacity duration-200 ease-out lg:hidden ${
+        className={`fixed inset-x-0 top-0 z-[45] flex h-[100dvh] flex-col overflow-y-auto bg-ink-850 px-6 pt-24 pb-8 transition-opacity duration-200 ease-out lg:hidden ${
           open
             ? "pointer-events-auto opacity-100"
             : "pointer-events-none opacity-0"
@@ -159,7 +159,7 @@ export default function Header() {
                 href={link.href}
                 onClick={() => handleMobileNav(link.href)}
                 aria-current={active ? "page" : undefined}
-                className={`border-b border-white/10 py-3.5 font-display text-[30px] tracking-[0.04em] transition-[transform,opacity,color] duration-300 ease-out motion-reduce:transition-none motion-reduce:translate-y-0 motion-reduce:opacity-100 ${
+                className={`border-b border-white/10 py-3 font-display text-[26px] tracking-[0.04em] transition-[transform,opacity,color] duration-300 ease-out motion-reduce:transition-none motion-reduce:translate-y-0 motion-reduce:opacity-100 ${
                   active ? "text-brand-gold" : "text-white hover:text-brand-gold"
                 } ${open ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"}`}
                 // quick staggered reveal on open; collapse together on close
